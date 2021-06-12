@@ -5,7 +5,7 @@
     <classes>
       <class name="com.restApi_Get.Get_API_BDD">
         <methods>
-          <include name="getApiTest_3"/>
+          <include name="numberOfCircuitsYearTest"/>
         </methods>
       </class> <!-- com.restApi_Get.Get_API_BDD -->
     </classes>

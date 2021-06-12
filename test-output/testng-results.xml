@@ -1,16 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1600" started-at="2021-06-12T19:03:26Z" finished-at="2021-06-12T19:03:28Z">
+  <suite name="Default suite" duration-ms="2259" started-at="2021-06-12T20:03:58Z" finished-at="2021-06-12T20:04:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1600" started-at="2021-06-12T19:03:26Z" finished-at="2021-06-12T19:03:28Z">
+    <test name="Default test" duration-ms="2259" started-at="2021-06-12T20:03:58Z" finished-at="2021-06-12T20:04:01Z">
       <class name="com.restApi_Get.Get_API_BDD">
-        <test-method status="PASS" signature="getApiTest_4()[pri:0, instance:com.restApi_Get.Get_API_BDD@2a5ca609]" name="getApiTest_4" duration-ms="1585" started-at="2021-06-12T19:03:26Z" finished-at="2021-06-12T19:03:28Z">
+        <test-method status="PASS" signature="numberOfCircuitsYearTest(java.lang.String, int)[pri:0, instance:com.restApi_Get.Get_API_BDD@68be2bc2]" name="numberOfCircuitsYearTest" duration-ms="1751" started-at="2021-06-12T20:03:58Z" data-provider="getYearData" finished-at="2021-06-12T20:04:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2017]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getApiTest_4 -->
+        </test-method> <!-- numberOfCircuitsYearTest -->
+        <test-method status="PASS" signature="numberOfCircuitsYearTest(java.lang.String, int)[pri:0, instance:com.restApi_Get.Get_API_BDD@68be2bc2]" name="numberOfCircuitsYearTest" duration-ms="254" started-at="2021-06-12T20:04:00Z" data-provider="getYearData" finished-at="2021-06-12T20:04:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2016]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- numberOfCircuitsYearTest -->
+        <test-method status="PASS" signature="numberOfCircuitsYearTest(java.lang.String, int)[pri:0, instance:com.restApi_Get.Get_API_BDD@68be2bc2]" name="numberOfCircuitsYearTest" duration-ms="233" started-at="2021-06-12T20:04:00Z" data-provider="getYearData" finished-at="2021-06-12T20:04:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1966]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- numberOfCircuitsYearTest -->
       </class> <!-- com.restApi_Get.Get_API_BDD -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
