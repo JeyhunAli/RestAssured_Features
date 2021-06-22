@@ -1,61 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2259" started-at="2021-06-12T20:03:58Z" finished-at="2021-06-12T20:04:01Z">
+  <suite name="Default suite" duration-ms="3115" started-at="2021-06-21T16:05:04Z" finished-at="2021-06-21T16:05:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2259" started-at="2021-06-12T20:03:58Z" finished-at="2021-06-12T20:04:01Z">
-      <class name="com.restApi_Get.Get_API_BDD">
-        <test-method status="PASS" signature="numberOfCircuitsYearTest(java.lang.String, int)[pri:0, instance:com.restApi_Get.Get_API_BDD@68be2bc2]" name="numberOfCircuitsYearTest" duration-ms="1751" started-at="2021-06-12T20:03:58Z" data-provider="getYearData" finished-at="2021-06-12T20:04:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2017]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="3115" started-at="2021-06-21T16:05:04Z" finished-at="2021-06-21T16:05:07Z">
+      <class name="com.rest.api.authentications.basic_authentications">
+        <test-method status="PASS" signature="OAuth_2_Test_OAuth_Header_WithQueryParam()[pri:0, instance:com.rest.api.authentications.basic_authentications@2a5ca609]" name="OAuth_2_Test_OAuth_Header_WithQueryParam" duration-ms="3099" started-at="2021-06-21T16:05:04Z" finished-at="2021-06-21T16:05:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- numberOfCircuitsYearTest -->
-        <test-method status="PASS" signature="numberOfCircuitsYearTest(java.lang.String, int)[pri:0, instance:com.restApi_Get.Get_API_BDD@68be2bc2]" name="numberOfCircuitsYearTest" duration-ms="254" started-at="2021-06-12T20:04:00Z" data-provider="getYearData" finished-at="2021-06-12T20:04:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2016]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[21]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- numberOfCircuitsYearTest -->
-        <test-method status="PASS" signature="numberOfCircuitsYearTest(java.lang.String, int)[pri:0, instance:com.restApi_Get.Get_API_BDD@68be2bc2]" name="numberOfCircuitsYearTest" duration-ms="233" started-at="2021-06-12T20:04:00Z" data-provider="getYearData" finished-at="2021-06-12T20:04:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1966]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- numberOfCircuitsYearTest -->
-      </class> <!-- com.restApi_Get.Get_API_BDD -->
+        </test-method> <!-- OAuth_2_Test_OAuth_Header_WithQueryParam -->
+      </class> <!-- com.rest.api.authentications.basic_authentications -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
