@@ -31,12 +31,16 @@ package com.restApi_Get;
  * its not coming from bdd cucumber 
  * 
  * 
+ * git fetch
+ * git pull origin master
+ * 
  * 
  */
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.assertEquals;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -124,36 +128,39 @@ public class Get_API_BDD {
 	}   
 	           
 	
+	@DataProvider(name = "getYearData")
+	public Object[][] getCircuitYearInfo(){
+		return new Object[][] {
+			{"2017", 20},
+			{"2016", 21},
+			{"1966", 9}
+		
+		};
 	
 	
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Test(dataProvider="getYearData")
+	public void numberOfCircuitsYearTest(String seasonYear, int circuitNumber){
+		
+		given().log().all()
+			.pathParam("raceSeason", seasonYear)
+		.when().log().all()
+			.get("http://ergast.com/api/f1/{raceSeason}/circuits.json")
+		.then().log().all()
+			.assertThat()
+				.body("MRData.CircuitTable.Circuits.circuitId", hasSize(circuitNumber));
+	}
 	
 	
 	
 	
 	
 
+	
 }
+	
+	
+	
+
+
