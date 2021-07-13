@@ -13,7 +13,7 @@ package com.restApi_Get;
  * 
  * rest api build upon on rest architicure 6 guidliance 
  * rest api is web services 
- * rest assured is is java library to automate the the api 
+ * rest assured is used to automate the the api 
  * rest is architicture use to read the api for example get, put,delete patch 
  * 
  * rest assured and http clients two java libraries both is automating rest api 
