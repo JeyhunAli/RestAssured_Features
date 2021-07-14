@@ -5,7 +5,7 @@
     <classes>
       <class name="com.rest.api.authentications.basic_authentications">
         <methods>
-          <include name="OAuth_2_Test"/>
+          <include name="OAuth_2_Test_OAuth_Header_WithQueryParam_2"/>
         </methods>
       </class> <!-- com.rest.api.authentications.basic_authentications -->
     </classes>

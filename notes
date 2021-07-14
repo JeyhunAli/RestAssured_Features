@@ -1,0 +1,490 @@
+ Session-1
+
+JSON,  JavaScript Object Notation
+Extended Markup Language (XML)
+HTTP means  Hyper text Transfer Protocol.
+SOAP BASIS WEB SERVICES --- stands for  simple object access protocol 
+REST API  representational STATE TRANSFER API
+XML RPC  remote procedure calls 
+
+
+
+
+
+API - application programming interface 
+API. —>> is used to communicate between systems 
+
+API client ——> it can be Web /Mobile/Desktop/ --- BROWSER  
+Request always sends by client  
+There two systems in API one is client another is sever
+In java when we are writing some codes some methods some functions to resolve 
+Some problem or some calculation they are also kind an API 
+
+Web Services API is when we are sending some request over the network that calls Web Services   
+
+API   is also calling middleware services between client and server 
+Request is always sent by client  
+API ——> there 2 API  SOAP / REST 
+
+This is also API  XML RPC 
+XML RPC  RPC IS Microsoft service 
+SERVER  response IS COMING FROM server after client request 
+
+
+
+here is explanation how API is working internally 
+API is kind a server meeting point between systems user use clients like application it can be web applications or mobile applications 
+to get the data and then use it how its internally happening at the time of user sending request through clients 
+it communicating other servers collecting all the data end responding back to the user 
+so, at the time of getting responses internally TWO independent I would say languages doing great job these Are 
+JSON AND XML  
+<<<<<<<JSON, or JavaScript Object Notation, is a minimal, readable format for structuring data. It is used primarily to transmit data between a server and web application>>>>>>.
+
+<<<<<<<<<<Extended Markup Language (XML) is used to describe data. The XML standard is a flexible way to create information formats and electronically share structured data via the public Internet, as well as via corporate networks.>>>>>>>>
+
+these two languages make communication 
+some web application its written by python or java or Dot Net programming languages to read them and understand them it happening through json 
+and xml 
+json is faster than xml that’s the differences between them have 
+ 
+
+
+
+API ——>>>. API is happening through web services through mobile services and HTTP protocol 
+
+HTTP means Hypertext Transfer Protocol. HTTP is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+
+
+
+
+There are three type of the API   --- its calls API releases policy 
+1.Private API-this API is only for internal purposes only for employees 
+OMS -- ORDER MANAGMENT system 
+
+2.Partner API its very famous one it’s for the B2B customers 
+BUSINNESS TO BUSINNESS 
+example for this let’s say sellers or organizers or sellers working with the e commerce services and trying to sell new products in their platforms 
+like eBay Amazon Walmart and so on 
+
+3 public API publicly available for everybody example like let’s say weather forecast 
+Another example is sports web pages scores 
+Example for public API weather forecast
+ANOTHER example currency API is there 
+public API can be free can be paid also 
+let’s say some API about football score or crickets score is publicly available and let’s say I’m creating my own web page then I’m taking all the
+ info from publicly available API
+
+
+
+
+ 
+
+There two web services are available   SOAP   REST
+Webservices is coming to the picture if any actions done by over the network  
+Network means http protocol 
+HTTP --- HYPER TEXT TRANSFER protocol 
+  
+Webservices divided into two part 
+SOAP BASIS WEB SERVICES 
+REST BASIS WEB SERVICES 
+
+SOAP BASIS WEB SERVICES --- stands for  simple object access protocol 
+10 - 12 year back from now there was problem with communication between services soap basis of the web services came to the picture 
+Soap is always based on protocol ---- some rules and regulations 
+and communication was happening by the XMLs language
+how was happening every company every webpage they have their own xml in developer level 
+every company internally convert their web pages written languages into xml file using SOAP PROTOCOL 
+Protocol means some guidelines some rules 
+then communicate with other web pages but communication happening between xml only here 
+but when their huge amount of data communication then this soap basis web services with xml languages became a less quality and 
+less performing their job 
+and this is not Stateless API
+XML --- STANDS FOR 
+Extendable Markup Language (XML) is used to describe data. The XML standard is a flexible way to create
+ information formats and electronically share structured data via the public Internet, as well as via corporate networks.
+
+
+REST BASIS WEB SERVICES 
+STANDS FOR —— representational STATE TRANSFER API
+
+REST IS NOT A protocol STYLE ITS A architecture style
+It means there no official protocol no official standard for the rest is defined 
+Rest API SAYS you can communicate with other systems in any media language like json xml string text 
+Pdf/word/images also I can pass through rest API 
+For example, while downloading some pdf it giving us all the written pdf 
+This kind things are missing in soap-based API
+
+
+
+ 
+
+ 
+
+
+Guidelines Architectures for rest API  
+
+1.	it has to follow client server Architect: HTTP protocol 
+2.	client server architect has to follow http protocol
+3.	without htpp protocol u cannot build rest api
+ There are has to be client has to be server 
+Request has to send to the server from client over the http over the Network 
+
+2.Rest API has to be stateless ness. It means whatever the client requests any information to the server.
+No client content is stored during the communication 
+Server is not holding any Information about client 
+
+3. Cache ability— means whatever the data coming from server we can cache it like we can store it means huge amounts of the data I’m requesting and getting them and Cache them 
+So instead of sending again and again request to the server I’m just store it and whenever I need again any data, I just send the request to the cache 
+
+So advantageous of Cache ability is performance and data availability.  All the e commerce company they use Cache ability concept.
+ Cache ability also calls temporarily database which is hold data for some time 
+30 min or 1 hour 
+
+4.Layered - Cascaded System it means whenever client server interaction is happening 
+it means while getting all the data some more layers is there like security layer cache layer load balance layer  
+security cascaded layer is encrypting data from hacking 
+if any hacking is there while getting data from any server that security cascaded layer will encrypt it then I will be able to decrypt it on the UI
+API it has to define by all this layered cascaded system 
+when ever getting the data huge amounts of the data they are dividing into several parts 
+
+5 code on demand client send some executable code to the server 
+
+6 uniform Interface --- it means whatever the media I’m passing 
+it should be unified intermediate transmission systems it can be xml/json
+
+self-descriptive messages between server and client Whenever you are sending Information client to server or server to client 
+those messages have to pass with self-descriptive messages if any mistakes then we will see some errors like 404 400
+once the system, send this kind of the messages then need to delete 
+then we have to call delete API 
+
+
+Micro Services Architecture 
+
+This micro service is filling one functional flow all the functionalities every link every search text, add to cart, choose by color, they are one micro service API
+All the entire functionality is divided into small services and they are running independently they are not dependent from each other’s 
+Each server has its own server and own database 
+Advantages of micro services is let’s say tomorrow some of the feature get down or became frozen or some issue happening the entire application Is never getting down 
+Another advanced advantage is let’s say any issue with some button or link without shutting down system zero down fixing and deploying to the production 
+microservices they are not the rest API in web application 
+to test Micro Services Architecture every company they provide one rest client 
+which will call all this micro service through RPC calls 
+XML RPC  remote procedure calls 
+
+ 
+
+XML RPC 
+
+
+
+Session-2
+
+REST APIs: HTTP Methods: 
+
+Rest API major operators CRUD 
+C - Create - POST 
+R - Retrieve -- GET 
+U - Update - PUT/PATCH 
+D - Delete - DELETE 1. 
+
+GET - Retrieve the data/resource
+It calls safe method why because it cannot change any data 
+The state of the resources will remain same 
+
+Methods - cannot change the data 
+idempotent - means server will send the same info to all the clients -- 200 OK status code -- 404 NOT FOUND  
+400 BAD Request 
+--GET API DATA can be cached 
+
+Bearer is key word to access token 
+We use token because of security point of view if there are no token everybody can hit the api and do some modification 
+
+Only get call can be cache. 
+
+2. POST -- Create the data/resource 201 -- Created code when we use post call 
+400 -- BAD REQUEST 
+JSON/XML BODY – when we are creating the data we passing 
+Either in json or in xml 
+Post call cannot be cached
+ POST CALL --> Create the data --> GET CALL and try to get the same data 
+Whenever we create data through api if there any syntax error it will throw 400 bad request
+422 error code 
+ when creating same data duplicate data error code 
+domain url   actual url 
+service url is to get data or post call or put/patch or delete this are service url 
+combination of actual and service URL call     uri
+
+self-descriptive messages is very important 
+let's say we passing same post call again 
+it should give us some message that data already been taken
+
+to use post API we need url+api = uri along with authorization then token bearer type 
+then with the json or xml type body 
+
+put call  to update any data in url along with uri pass id of the data so that it can understand 
+what data need to be updated
+4.	PUT - Update the data/resource 201 -- Created 
+5.	400 -- BAD REQUEST --always update the entire existing data --if data is not available, then it should create the new data 
+Here if we are updating data with put call not only one single raw all the data rows will be update with same info along with new data 
+
+Another important thing lets I’m calling put call to update the data but the data which I want to update its not available in the database of service 
+At time put call will behave like post call instead of updating data it will create data because its not available 
+
+C2C it's different in some company they are allowing with put create data in some of them no 
+Some company they are not allow while updating data to pass only specific data which u want to update u have to pass entire Jason 
+
+
+
+4. Patch -- update only partial part of data 
+Patch call is faster than put 
+When u do some patch api call 
+Pass the uri like this  https://gorest.co.in/public-api/users/2127-->>     here right after users pass id number
+ 
+
+
+5. DELETE -- Delete the data from the DB 200 , or 204 - OK 
+404 Not found
+If I want to delete some data and that data is not there it will give 404 no content
+
+Bearer is type of token 
+in postman we pass main URL and service URL to get what we are looking for 
+then on the headers we pass authorization then value Bearer token 
+bearer is key word to access token 
+
+in rest API cache can happen only in get call not in others 
+cache means whenever we get huge amount of the data, we store them in temporary database 
+
+when I combined main domain URL and service URL together, they become URI 
+
+after post call data created in rest API data base 
+to validate it we call get call with particular info to make sure data created 
+
+400 bad requests are happening when we are passing some wrong syntax
+
+Duplicate data it’s not allowed to create in rest API data base  
+Some specific data id, or email has to be different 
+
+
+POSTMAN API TOOL
+
+
+
+Postman: Postman is an API (application programming interface) development tool which helps to build, test and modify APIs. ... It has the ability to make various types of HTTP requests (GET, POST, PUT, PATCH), saving environments for later use.
+
+
+Postman is API CLIENT you can simply call the API and execute the API
+IN postman there 4 major things which is helping to use it 
+
+1. organize requests
+2.it’s very good tool to execute our API in different environment 
+In API as tester or developer we never work on actual URL we always work internal environment Uri only in production environment 
+End user use actual URL 
+
+
+
+Like QA/DEV/PROD/STG
+3.MAINTAIN different local and global ENVIRONMENT variables 
+4. easily we can share our APIs with different team members.
+
+
+
+
+
+
+Session-3
+
+ 
+
+This what we passing while doing API testing 
+
+When creating request, we need all this http method call either it gets, put, patch, post or rest 
+This is the request every time we have to pass in order to get response 
+
+
+ 
+
+After creating request and sending them to the server then we get response 
+
+
+ 
+ 
+
+Query param for filtering the data on the basis of given data by using question mark ? and & operator 
+Path param is used for to reach the server location and any location there and to get in there 
+For example, from LinkedIn/all the users / from users all the profiles / from profiles all the images 
+All this destination can be getting by using path param 
+
+We can use them both together in one uri
+
+ 
+Content-type: application/json
+It's for json body
+
+Content-type application/xml
+It's for xml body
+
+Sometimes we have to download some pdf file or some document in that case content type will be different 
+Or some case we have to pass username and password in the form of headers key username and value password 
+Headers is most important one we pass there authorization content type jsn or xml or any file if requirent 
+
+Path and query parameters mean in order to get some specific result 
+We have to use some filters 
+
+If we have multiple queries we use & operators to get the result
+
+Just use slash
+Differences between path and query parameters 
+Is path single forward slash query parameter is a question mark 
+
+Cookies is generally us used to localization purpose 
+
+If somebody asking your param just simple go to bulk edit and copy then send it 
+
+
+ 
+
+
+In API as tester we have to test all the environment database 
+Like dev/QA/stg/prod. To test all this environment, we can do from postman 
+
+Usually all the environments have to have their own data base but some low budget companies or startups they shear the database 
+
+
+ 2 types of the environments one is global another is local 
+Any post create call you do in your qa environment it will be available only in qa not in other envirenmrnts
+
+Global variables means it applicable for all the environment 
+Environment is like a server which is has it's own database
+
+Collection folder in API TESTING 
+Its most important IN POSTMAN to use collection to add all the related API calls under one collection then use it 
+
+New joiners all the time have to ask about collection of the API link 
+
+How to create global env 
+Click on manage environment global give it a name and value 
+And then at headers section   Authorization is your key and as value inside {{}}  write the name of your global env name 
+
+
+Session 4
+
+Creating and setting authorization on the parent level 
+Go to the project click on three dot edit  then authorization then choose token type and add 
+In our case it was bearer token and we copy that token from go rest then I paste it 
+
+So then go to the any api call either it's gets put delete or post api click on authorization and select 
+Inherit auth from parent 
+And delete previous one it will be applicable for all the api 
+ Once u have variable for the URL and u add the {{URL}} to the uri 
+It's easy to run api collection 
+You can choose the variable and you can run collection 
+
+Session 5
+Complete info u can get about api in the console section
+view in web option it's in 
+When u click on run collection you will see it over there if I have proper description about api it will be more appropriate 
+
+Publishing api - for that collection level click publish and guidance will take u up to get published URL 
+
+From the body u can create environment global var also for that 
+In environment level create the blank var  just give some name u want for example 
+Constantly using inactive users list 
+Or female, male list 
+Or phone number 
+Make sure this environment names created 
+Then go to the get api 
+To the body find the context u want to make it as var 
+Double click then right click then choose any particular one 
+
+So, to use it as var 
+In uri level {{yourVariableName}} 
+
+
+
+Api authentication 
+1.	Basic  authentication 
+Just passing username and password 
+in postman go to authorization select basic OAuth and pass your credentials
+
+2.	OAuth1.0
+Consumer key (API KEY)
+Consumer secret (API SECRET KEY )
+Access token (ACCESS TOKEN)
+Secret token (ACCESS TOKEN SECRET)
+THIS protocol of using OAuth 1 if you want to use OAuth1
+u have to provide this info this info provided by developers and theres an option to regenerate them as well for secure purpose 
+once in postman u provided all this info 
+in the section of "add authorization data to" select request headers then send  
+great example for OAuth1.0 is to signUP different application with social media account like 
+gmail facebook or linkedln
+
+
+3.	OAuth2.0 
+lets say we have direct access token in the header passing authorization berarer type and access token and hit the api
+if we dont have direct access token then we ahave to get new one 
+to use OAuth2.0 if we have direct access token in some cases you i can use but some cases we have to 
+get new access token by providing these information
+
+Token id/ OAuth Token – Bearer token 
+token name, Client id , Client Secret, Grand type, Access Token URL
+url for practicing oAuth2.0
+http://coop.apps.symfonycasts.com/api
+
+
+
+Tweet Api use OAuth1 api 
+In their documentation they provide 
+Consumer key 
+Consumer secret 
+Access token 
+Secret token 
+This tokens so once we provide these info then we can tweet an API through postman 
+Along with that we have to pass the url 
+
+
+OAuth2.0     if you have direct access token just pass it directly 
+But if you don’t have it u have to create in application level 
+By clicking Get New Access token on postman  
+Client id , Client Secret, Grand type 
+And passing these values 
+Grand type is credentials 
+These documentation always providing by developers of website 
+Second way to apply for OAuth2.0 
+Just pass on authorization on headers level choose value type bearer and pass the token 
+Third way directly with bearer token 
+While passing credentials don’t forget to pass domain url with given app action url together 
+It's becoming Uri 
+
+Real time example for OAuth1.0 
+For example passing credentials or any application asking you that you can log inn with your Gmail account or face book account they use OAuth1.0 
+Sign up with different social media account it's great example for OAuth1.0 
+
+But OAuth2.0   is different you must have proper token and you can pass it only one type Authorization token and you are good 
+But with  
+OAuth1.0 you have to pass 
+Consumer key 
+Consumer secret 
+Access token 
+Secret token 
+Without these you will get an error
+
+
+
+HTTP STATUS CODES:
+1XX   -- 100 101 102 103 122
+2XX   -- 200 to 208 and 226 HTTP successful codes
+3XX   -- 300 – 308 Redirection codes
+4XX   -- 400 to 431 and 449 and 450 Client-side error codes 
+5XX   -- 500 to 511 and 598 and 599 http Server-side error codes 
+
+What does OAuth 2 stand for?
+Open Authorization
+OAuth 2.0, which stands for “Open Authorization”, is a standard designed to allow a website or application to access resources hosted by other web apps on behalf of a user.
+
+
+
+
+ 
+
+
+
+
