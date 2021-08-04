@@ -36,6 +36,9 @@ public class basicAndOAuth1 {
 	public void OAuth_2_Test() {
 		
 		//using .auth() .oauth2 method 
+		//if you are using 
+		//1 with header: append your token with Berare Token 
+		//2. with OAuth2() method: no need to add Bearer just pass the value 
 		/**
 		 * sometimes while using .auth() and .oauth2 method if we passing Bearer along with token it might not work 
 		 * because internally it calling bearer 

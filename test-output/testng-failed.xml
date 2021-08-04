@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.rest.api.authentications.basic_authentications">
+      <class name="com.rest.api.authentications.GenereateTokenAtTheRunTime">
         <methods>
-          <include name="OAuth_2_Test_OAuth_Header_WithQueryParam_2"/>
+          <include name="oAuth2APIstest"/>
         </methods>
-      </class> <!-- com.rest.api.authentications.basic_authentications -->
+      </class> <!-- com.rest.api.authentications.GenereateTokenAtTheRunTime -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

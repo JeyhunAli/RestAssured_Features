@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3186" started-at="2021-07-14T20:42:08Z" finished-at="2021-07-14T20:42:11Z">
+  <suite name="Default suite" duration-ms="1690" started-at="2021-08-04T14:59:17Z" finished-at="2021-08-04T14:59:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3186" started-at="2021-07-14T20:42:08Z" finished-at="2021-07-14T20:42:11Z">
-      <class name="com.rest.api.authentications.basicAndOAuth1">
-        <test-method status="PASS" signature="OAuth_2_Test()[pri:0, instance:com.rest.api.authentications.basicAndOAuth1@2a5ca609]" name="OAuth_2_Test" duration-ms="3169" started-at="2021-07-14T20:42:08Z" finished-at="2021-07-14T20:42:11Z">
+    <test name="Default test" duration-ms="1690" started-at="2021-08-04T14:59:17Z" finished-at="2021-08-04T14:59:18Z">
+      <class name="com.rest.api.authentications.GenereateTokenAtTheRunTime">
+        <test-method status="PASS" signature="generateToken_OAuth_2()[pri:0, instance:com.rest.api.authentications.GenereateTokenAtTheRunTime@548a9f61]" name="generateToken_OAuth_2" duration-ms="1673" started-at="2021-08-04T14:59:17Z" finished-at="2021-08-04T14:59:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OAuth_2_Test -->
-      </class> <!-- com.rest.api.authentications.basicAndOAuth1 -->
+        </test-method> <!-- generateToken_OAuth_2 -->
+      </class> <!-- com.rest.api.authentications.GenereateTokenAtTheRunTime -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
