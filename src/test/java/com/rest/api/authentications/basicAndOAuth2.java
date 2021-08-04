@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class basicAndOAuth1 {
+public class basicAndOAuth2 {
 	
 	/**
 	 * we have two options using .auth() .oauth2 method 
@@ -34,6 +34,11 @@ public class basicAndOAuth1 {
 	
 	@Test 
 	public void OAuth_2_Test() {
+		
+		//same in postman 
+		//if u pass token through header u need Bearer keyword 
+		// if u pass through Authentication OAuth2 no need to
+		
 		
 		//using .auth() .oauth2 method 
 		//if you are using 
