@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1690" started-at="2021-08-04T14:59:17Z" finished-at="2021-08-04T14:59:18Z">
+  <suite name="Default suite" duration-ms="1482" started-at="2021-08-08T20:28:34Z" finished-at="2021-08-08T20:28:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1690" started-at="2021-08-04T14:59:17Z" finished-at="2021-08-04T14:59:18Z">
-      <class name="com.rest.api.authentications.GenereateTokenAtTheRunTime">
-        <test-method status="PASS" signature="generateToken_OAuth_2()[pri:0, instance:com.rest.api.authentications.GenereateTokenAtTheRunTime@548a9f61]" name="generateToken_OAuth_2" duration-ms="1673" started-at="2021-08-04T14:59:17Z" finished-at="2021-08-04T14:59:18Z">
+    <test name="Default test" duration-ms="1482" started-at="2021-08-08T20:28:34Z" finished-at="2021-08-08T20:28:36Z">
+      <class name="com.restApi_Post.PostApiBDD">
+        <test-method status="PASS" signature="tokenPostApi_test_File()[pri:0, instance:com.restApi_Post.PostApiBDD@675d3402]" name="tokenPostApi_test_File" duration-ms="1465" started-at="2021-08-08T20:28:34Z" finished-at="2021-08-08T20:28:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generateToken_OAuth_2 -->
-      </class> <!-- com.rest.api.authentications.GenereateTokenAtTheRunTime -->
+        </test-method> <!-- tokenPostApi_test_File -->
+      </class> <!-- com.restApi_Post.PostApiBDD -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
