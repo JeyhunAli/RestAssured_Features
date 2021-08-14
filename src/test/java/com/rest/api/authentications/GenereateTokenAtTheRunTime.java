@@ -27,7 +27,7 @@ public class GenereateTokenAtTheRunTime {
 		 RestAssured.given()
 		           .formParam("client id", "TestingConcept")
 		           .formParam("client secret", "d36df0355a4d350e469cef450df0f414")
-		         .formParam("grant_type", "client_credentials");
+		           .formParam("grant_type", "client_credentials");
 		 
 		Response response = request.post("http://coop.apps.symfonycasts.com/token");
 		System.out.println(response.statusCode());
