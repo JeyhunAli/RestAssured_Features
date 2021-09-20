@@ -54,7 +54,6 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.assertEquals;
 
-import org.apache.http.impl.io.ContentLengthInputStream;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

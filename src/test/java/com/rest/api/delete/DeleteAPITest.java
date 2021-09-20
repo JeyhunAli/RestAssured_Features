@@ -28,22 +28,6 @@ public class DeleteAPITest {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
-	
-	
-	
-	
-	
-	
-
 }
