@@ -14,7 +14,7 @@ public class GenereateTokenAtTheRunTime {
 	 
 	 /**
 	  * passing grant Type, client id, client secret, token name
-	  * to pass all this stuff we need method 
+	  * to pass all these stuff we need method 
 	  * and they are not paramaters or headers 
 	  * they are in the form of 
 	  * <<<<< formPara m>>>>>>>
