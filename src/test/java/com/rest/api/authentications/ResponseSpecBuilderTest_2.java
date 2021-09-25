@@ -9,7 +9,7 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
 
-public class ResponseSpecBuilderTest {
+public class ResponseSpecBuilderTest_2 {
 	
 	
 	/**
@@ -20,7 +20,7 @@ public class ResponseSpecBuilderTest {
 	 * or specific header should be there 
 	 * 
 	 * its kind defining one common method and every time calling that function for every test cases 
-	 * this is the way we are avoiding writing multiple line of the code again again 
+	 * this is the way we are avoiding writing multiple line of the code again and again 
 	 * another advantage lets say for status code we are waiting 200 
 	 * but tomorrow it changed from 200 to 201 
 	 * then we have to go each and every test cases and change them accordingly its time taking process but 

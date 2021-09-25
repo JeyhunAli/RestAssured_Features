@@ -14,6 +14,25 @@ public class basicAndOAuth2 {
 	 * or 
 	 * using header method just like postman and passing Authorization and Bearer token
 	 * then validatinng
+	 * 
+	 * 
+	 * 
+	 * 
+	 * basic OAuth
+	 * passing username and password 
+	 * 
+	 * OAuth1 
+	 * consumer key, consumer secret 
+	 * Access token, secret token 
+	 * 
+	 * OAuth2
+	 * if you have direct access token just pass it and call your api
+	 * but if you dont have it then if you are in postman you have to click get new token 
+	 * then there are certain information you have to provide 
+	 * token name, grand type, client id client secret 
+	 * these information provide u by developers 
+	 * 
+	 * 
 	 */
 	
 	@Test
@@ -117,7 +136,7 @@ public class basicAndOAuth2 {
 		RestAssured.baseURI = "https://gorest.co.in/";
 		given()
 		       .log().all()
-		       //.contentType("applivation/json")
+		       .contentType("application/json")
 		       .header("Authorization", "Bearer a57eebb4185fb6d55a4294c8c0c5b9cde28a86d05cba3e1e0b0c778f02a1a2ca")
 		       .queryParam("name", "Opalinaa Gandhi")
 			   .queryParam("gender", "female")

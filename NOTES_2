@@ -1,0 +1,5 @@
+REST ASSURED IS simply java DSL library 
+with the rest assured we creating rest assured methods with the help of java 
+to hit the api and getting response validating response 
+to make sure actual response is matching with expected response rest assured is used to automate the 
+api process 

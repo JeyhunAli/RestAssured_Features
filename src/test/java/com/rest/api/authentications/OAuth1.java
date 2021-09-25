@@ -37,7 +37,7 @@ public class OAuth1 {
 	
 	
 	@Test
-	//here passing alll the requiret key, secret, token inside pharenthesis
+	//here passing all the requiret key, secret, token inside pharenthesis
 	//along with your url
 	public void twitterApi_OAuth1() {
 		RequestSpecification request =

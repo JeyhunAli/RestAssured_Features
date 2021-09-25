@@ -2,6 +2,7 @@ package com.restApi_Get;
 
 /**
  * these two static imports we have to add manually
+ * under these imports we have a lot of libraries
  * 
  * import static io.restassured.RestAssured.*;
  * import static org.hamcrest.Matchers.*;
@@ -54,7 +55,6 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.assertEquals;
 
-import org.apache.http.impl.io.ContentLengthInputStream;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -74,28 +74,45 @@ public class Get_API_BDD {
 	@Test
 	public void getApiTest_1() {
 
-		given().log().all().when().log().all().get("http://ergast.com/api/f1/2021/circuits.json").then().log().all()
-				.assertThat().body("MRData.CircuitTable.Circuits.circuitId", hasSize(22));
+		given().log().all().
+		when().log().all().
+		     get("http://ergast.com/api/f1/2021/circuits.json").
+		then().log().all()
+		     .assertThat().
+			 body("MRData.CircuitTable.Circuits.circuitId", hasSize(22));
 
 	}
 
 	@Test
 	public void getApiTest_2() {
 
-		Response responce = given().log().all().when().log().all().get("http://ergast.com/api/f1/2021/circuits.json");
+		Response responce = 
+			given().log().all().
+			when().log().all().
+				get("http://ergast.com/api/f1/2021/circuits.json");
 		responce.getBody();
 		int statuscode = responce.getStatusCode();
 		assertEquals(statuscode, 200);
+		System.out.println(responce.prettyPrint());
 		System.out.println("satus code is: " + statuscode);
 		System.out.println(responce.prettyPrint());
+		
 	}
 
 	@Test
 	public void getApiTest_3() {
 
 		RestAssured.baseURI = "http://ergast.com";
-		given().when().get("/api/f1/2021/circuits.json").then().log().all().assertThat().statusCode(200).and()
-				.header("Content-Length", equalTo("4972")).and().contentType(ContentType.JSON);
+		given().
+		when().
+		     get("/api/f1/2021/circuits.json").
+		then().log().all().
+		     assertThat().
+		     statusCode(200).
+		and().
+		     header("Content-Length", equalTo("4972")).
+		and().
+		     contentType(ContentType.JSON);
 
 	}
 
@@ -113,7 +130,7 @@ public class Get_API_BDD {
 		        .param("bar", paramValue2)
         .when().log().all()
                 .get("http://md5.jsontest.com")
-                .then().log().all()
+        .then().log().all()
                 .assertThat()
 				.body("md5", equalTo(expectedMd5Value));
         System.out.println("paramValue is:: " + paramValue);
@@ -147,8 +164,12 @@ public class Get_API_BDD {
 	@Test(dataProvider = "getYearData")
 	public void numberOfCircuitsYearTest(String seasonYear, int circuitNumber) {
 
-		given().log().all().pathParam("raceSeason", seasonYear).when().log().all()
-				.get("http://ergast.com/api/f1/{raceSeason}/circuits.json").then().log().all().assertThat()
+		given().log().all().
+		        pathParam("raceSeason", seasonYear).
+		when().log().all()
+				.get("http://ergast.com/api/f1/{raceSeason}/circuits.json").
+		then().log().all().
+		         assertThat()
 				.body("MRData.CircuitTable.Circuits.circuitId", hasSize(circuitNumber));
 	}
 	
@@ -161,9 +182,9 @@ public class Get_API_BDD {
 
 		given().log().all()
 		.when()
-		.get("https://simple-books-api.glitch.me")
+		     .get("https://simple-books-api.glitch.me")
 		.then()
-		.assertThat()
+		     .assertThat()
 		.statusCode(200);
 		System.out.println("status code is equal 200");
 	}
@@ -175,7 +196,7 @@ public class Get_API_BDD {
 		Response response =
 		given().log().all()
 		.when()
-		.get("https://simple-books-api.glitch.me");
+		     .get("https://simple-books-api.glitch.me");
 		int ststusCode = response.getStatusCode();
 		System.out.println("status code is: " + ststusCode);
 		Assert.assertEquals(ststusCode, 200,  "passed");
@@ -190,7 +211,7 @@ public class Get_API_BDD {
 		given().log().all()
 		.when()
 		       .get("/status")
-		.then()
+		.then().log().all()
 		       .assertThat()
 		       .statusCode(200)
 		.and()
@@ -202,42 +223,6 @@ public class Get_API_BDD {
 		
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 
