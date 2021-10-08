@@ -29,9 +29,22 @@ public class basicAndOAuth2 {
 	 * if you have direct access token just pass it and call your api
 	 * but if you dont have it then if you are in postman you have to click get new token 
 	 * then there are certain information you have to provide 
+	 * 
 	 * token name, grand type, client id client secret 
 	 * these information provide u by developers 
 	 * 
+	 * 
+	 * 
+	 * when we passing form parametrs like clinet id, grand type we use these methods for example:
+	 * 
+	 *             .formParam("client id", "TestingConcept")
+	 *	           .formParam("client secret", "d36df0355a4d350e469cef450df0f414")
+	 *	           .formParam("grant_type", "client_credentials");
+	 * its better to use 
+	 * with these methods RequestSpecification
+	 * 
+	 * and then to access all the response 
+	 * we use response.jsonPath().getString("access_token")
 	 * 
 	 */
 	

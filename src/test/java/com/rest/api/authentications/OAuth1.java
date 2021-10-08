@@ -20,7 +20,7 @@ import io.restassured.specification.RequestSpecification;
  * when we are using OAuth1  first of all we need 
  * Scribe 
  * In order to use OAuth 1 and OAuth 2 
- * (for query parameter signing) you need to add Scribe to your classpath 
+ * (for query parameter signing) you need to add Scribe to your classpath-dependency
  * 
  * <dependency>
             <groupId>com.github.scribejava</groupId>

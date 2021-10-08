@@ -38,7 +38,9 @@ public class GenereateTokenAtTheRunTime {
 		// access token id then we can use it any call 
 		//avoiding hard coding 
 		String accessToken = response.jsonPath().getString("access_token");
+		String tokentype = response.jsonPath().getString("token_type");
 		System.out.println("tokenId "+accessToken);
+		System.out.println("token_type is ::: "+ tokentype);
 		
 		
 	
