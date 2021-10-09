@@ -55,6 +55,13 @@
 			<version>2.12.1</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.juneau/juneau-marshall -->
+		<dependency>
+			<groupId>org.apache.juneau</groupId>
+			<artifactId>juneau-marshall</artifactId>
+			<version>8.2.0</version>
+		</dependency>
+
 
 
 

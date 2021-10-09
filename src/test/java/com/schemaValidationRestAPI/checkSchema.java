@@ -4,6 +4,14 @@ package com.schemaValidationRestAPI;
  * 
  * @author jey
  * 
+ * Schema validation ensure that response coming back from the endpoint
+   Matches with predefined set of rules
+   
+   JSON Schema Validation is required because: 
+   We monitor API responses and ensure that the
+    format that we are getting is same as the expected one. 
+    We get alert whenever there is any breaking change in JSON response.
+ * 
  * for schema validation first we need dependancy 
  * <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
 		<dependency>
@@ -12,7 +20,7 @@ package com.schemaValidationRestAPI;
 			<version>4.3.3</version>
 		</dependency>
  *
- *data schema have to match in both the cases 
+ * data schema have to match in both the cases 
  * for example data migration process without mathcing is not possible 
  *
  * Schema diagrammatic presentation a structured framework or plan
@@ -51,7 +59,7 @@ public class checkSchema {
 		// passing as body data file path 
 		// and as assortion body  .body(matchesJsonSchemaInClasspath("BookingSchema.json"));
 		//its giving us data validation point 
-		// if i can change any data type from string to integer it will definately throw an error
+		// if i can change any data type from string to integer in BookingSchema.json file it will definately throw an error
 		
 		RestAssured.baseURI = "https://restful-booker.herokuapp.com";
 		given()   

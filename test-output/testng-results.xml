@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2851" started-at="2021-09-24T20:53:41Z" finished-at="2021-09-24T20:53:44Z">
+  <suite name="Default suite" duration-ms="1799" started-at="2021-09-25T20:50:52Z" finished-at="2021-09-25T20:50:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2851" started-at="2021-09-24T20:53:41Z" finished-at="2021-09-24T20:53:44Z">
-      <class name="com.rest.api.authentications.basicAndOAuth2">
-        <test-method status="PASS" signature="OAuth_2_Test_OAuth_Header_WithQueryParam_2()[pri:0, instance:com.rest.api.authentications.basicAndOAuth2@47c62251]" name="OAuth_2_Test_OAuth_Header_WithQueryParam_2" duration-ms="2834" started-at="2021-09-24T20:53:41Z" finished-at="2021-09-24T20:53:44Z">
+    <test name="Default test" duration-ms="1799" started-at="2021-09-25T20:50:52Z" finished-at="2021-09-25T20:50:53Z">
+      <class name="com.restApi_Post.PostApiBDD">
+        <test-method status="PASS" signature="tokenPostApi_test_File2()[pri:0, instance:com.restApi_Post.PostApiBDD@47c62251]" name="tokenPostApi_test_File2" duration-ms="1781" started-at="2021-09-25T20:50:52Z" finished-at="2021-09-25T20:50:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OAuth_2_Test_OAuth_Header_WithQueryParam_2 -->
-      </class> <!-- com.rest.api.authentications.basicAndOAuth2 -->
+        </test-method> <!-- tokenPostApi_test_File2 -->
+      </class> <!-- com.restApi_Post.PostApiBDD -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
