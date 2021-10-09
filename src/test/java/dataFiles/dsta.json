@@ -1,0 +1,8 @@
+{
+	"color": "white",
+	"name": "MacBook",
+	"price": 1000,
+	"sellerNames": [
+		"Google, Tesla, Microsoft, Apple"
+	]
+}
