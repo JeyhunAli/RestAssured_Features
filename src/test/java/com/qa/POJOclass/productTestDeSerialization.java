@@ -7,6 +7,9 @@ import org.apache.juneau.json.JsonParser;
 import org.apache.juneau.parser.ParseException;
 
 public class productTestDeSerialization {
+	
+	//generate toString method in product class 
+	//so then easy to access all the data
 
 	public static void main(String[] args) throws ParseException, IOException {
 		
@@ -17,7 +20,7 @@ public class productTestDeSerialization {
 		System.out.println(pro.getName());
 		System.out.println(pro.getColor());
 		
-		
+		System.out.println(pro);
 		
 	}
 

@@ -1,5 +1,7 @@
 package com.qa.POJOclass;
 
+import java.util.Arrays;
+
 import org.apache.juneau.annotation.Beanc;
 
 public class Product {
@@ -52,6 +54,26 @@ public class Product {
 	public void setSellerNames(String[] sellerNames) {
 		this.sellerNames = sellerNames;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Product [name=" + name + ", color=" + color + ", price=" + price + ", sellerNames="
+				+ Arrays.toString(sellerNames) + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 

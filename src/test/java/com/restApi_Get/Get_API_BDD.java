@@ -5,7 +5,11 @@ package com.restApi_Get;
  * under these imports we have a lot of libraries
  * 
  * import static io.restassured.RestAssured.*;
+ * all the rest assured related class methods interfaces under this import 
+ * 
  * import static org.hamcrest.Matchers.*;
+ * for example hasSize, equalTo methods comes under hamcrest library
+ * 
  * Rest assured is java DSL(domain specific languaga) library
  * it means there are a lot of classes and methods which we can use to hit the api and then 
  * we can get the responce and we can validate the response 
@@ -15,6 +19,13 @@ package com.restApi_Get;
  * rest assured 
  * 
  * rest api build upon on rest architicure 6 guidliance 
+ * 1.it has to follow client server Architect: HTTP protocol 
+ * 2.Rest API has to be stateless ness
+ * 3. Cache ability
+ * 4.Layered - Cascaded System 
+ * 5 code on demand 
+ * 6 uniform Interface 
+ * 
  * rest api is web services 
  * rest assured is used to automate the the api 
  * rest is architicture use to read the api for example get, put,delete patch 
@@ -96,7 +107,8 @@ public class Get_API_BDD {
 		System.out.println(responce.prettyPrint());
 		System.out.println("satus code is: " + statuscode);
 		System.out.println(responce.prettyPrint());
-		
+		String sessionId = responce.sessionId();
+		System.out.println("session id is: " + sessionId);
 	}
 
 	@Test
@@ -110,9 +122,12 @@ public class Get_API_BDD {
 		     assertThat().
 		     statusCode(200).
 		and().
-		     header("Content-Length", equalTo("4972")).
+		     header("Content-Length", equalTo("4733")).
 		and().
 		     contentType(ContentType.JSON);
+		
+		     
+		
 
 	}
 
