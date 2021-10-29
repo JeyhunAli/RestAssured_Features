@@ -68,3 +68,17 @@ Scope
 In OAuth 2.0, scope is a way to provide access only to specific areas. Normally, you specify areas as a list of comma-separated or space-delimited strings. Each string indicates the area you can access.
 
 https://support.smartbear.com/readyapi/docs/performance/index.html
+
+<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<>>>>
+
+
+OAuth 2.0 is a complete rewrite of OAuth 1.0 from the ground up
+
+OAuth 2.0 is uses the HTTPS protocol to pass tokens
+OAuth 1 is uses HMAC-SHA signature strings.
+
+what is that means let me explain in easy way 
+
+
+
+
