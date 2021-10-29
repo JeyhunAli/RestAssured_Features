@@ -67,4 +67,4 @@ The four basic grant types are Authorization Code, Implicit, Resource Owner Cred
 Scope
 In OAuth 2.0, scope is a way to provide access only to specific areas. Normally, you specify areas as a list of comma-separated or space-delimited strings. Each string indicates the area you can access.
 
-
+https://support.smartbear.com/readyapi/docs/performance/index.html
