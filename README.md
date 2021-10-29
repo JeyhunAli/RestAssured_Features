@@ -4,8 +4,8 @@ hiting api with rest assured
 
 OAuth is an authorization method used to provide access to resources over the HTTP protocol.
 OAuth.1 can be used for authorization of various, numerous applications
-primarily it an access token to the applications which represents a user’s permission for the client to access their data
-OAuth 1 Terms
+primarily its an access token to the applications which represents a user’s permission for the client to access their data
+OAuth 1 Terms:
 OAuth 1 has a few interacting components:
 
 User is a person who wants to get access.
@@ -13,7 +13,7 @@ Consumer is an application or website that uses OAuth to access the Service Prov
 Service Provider is a web application that allows access via OAuth.
 Protected Resource is the data the user wants to access.
 Tokens
-OAuth 1 Authorization uses Request Token and Access Token to get access to the resources on the resource server.
+OAuth1 Authorization uses Request Token and Access Token to get access to the resources on the resource server.
 
 Request Token – a token containing Consumer Key and Consumer Secret used to ask the service for authorization.
 
