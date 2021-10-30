@@ -74,7 +74,8 @@ https://support.smartbear.com/readyapi/docs/performance/index.html
 
 OAuth 2.0 is a complete rewrite of OAuth 1.0 from the ground up
 
-OAuth 2.0 is uses the HTTPS protocol to pass tokens
+OAuth 2.0 is uses the HTTPS protocol to pass tokens.
+
 OAuth 1 is uses HMAC-SHA signature strings.
 
 what is that means let me explain in easy way 
