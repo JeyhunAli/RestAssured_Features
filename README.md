@@ -80,6 +80,22 @@ OAuth 1 is uses HMAC-SHA signature strings.
 
 what is that means let me explain in easy way 
 
+HMAC-SHA 
+hmac is keyed hash message identification code 
+here hash is a function which is map input and output 
+you provide it with specific amout of bits number or integer or string and output will be specific fixed amount of bits 
+
+but 
+hmac basically has 3 parameters 
+Actual hmac input 
+hash function 
+and secret
+
+these all together creating message authenticating code 
+
+
+now let me explain about http, https protocol  HTTP Vs HTTPS SSL/TLS 
+
 
 
 
