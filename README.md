@@ -84,18 +84,39 @@ HMAC-SHA
 hmac is keyed hash message identification code 
 here hash is a function which is map input and output 
 you provide it with specific amout of bits number or integer or string and output will be specific fixed amount of bits 
-
 but 
 hmac basically has 3 parameters 
 Actual hmac input 
 hash function 
 and secret
-
 these all together creating message authenticating code 
 
-
 now let me explain about http, https protocol  HTTP Vs HTTPS SSL/TLS 
+http ---> hyper text transfer protocol 
+when using this protocol theres insecure connection happening between client and server and communication is happening over the network 
+just with plain text format 
+its fine for small application where we dont use
+any personal information or any payment options 
+its very lightweight 
+and default port nummber is 80.    {(learn more about OSI reference model)}
 
+HTTPs ---> hyper text transfer protocol secure 
+always encrypted data pasing through communication client and server 
+port number for hhtps is 443
+Certificate authority on the browser level 
+https very well secured system 
+there are two type of security can involve here 
+SSL and TSL.   SSL--> secure socket layer,  TSL--> transport secure layer
+ssl older than tsl 
+tsl more secure than ssl
+majority of companies uses tsl 
+so the encryption is happening over the network before reaching out our info to the server its encrypt then server decrepit it 
+and same thing server sending responnse its encrypted over the network then our client decrepit it then its available in the form of readable for us
+
+SSL AND TSL HAVE THESE MODELS AS WELL 
+ASYMMETRIC AND SYMMETRIC encryption methods 
+
+![image](https://user-images.githubusercontent.com/50185967/139556533-f9b07f75-6102-4740-93bf-c24cb25eb3f9.png)
 
 
 
