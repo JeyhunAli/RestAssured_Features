@@ -118,5 +118,21 @@ ASYMMETRIC AND SYMMETRIC encryption methods
 
 ![image](https://user-images.githubusercontent.com/50185967/139556533-f9b07f75-6102-4740-93bf-c24cb25eb3f9.png)
 
+#API #Gateway
+Api is require additional infrastructure to secure, scale, and accelerate. applications
+And nowadays most of the applications build with #microservices
+These #microservices are loosely coupled in order to make your apps more scalable and highly available
+using a  #microservice comes with many more API calls going between your clients and your  
+microservices
+So, how do you securely manage this API traffic for a distributed system?  
+Well, with an API Gateway! 
+the first main benefit of API gateway is client #performance.
+the next main benefit is #security.
+another benefit which is #http #https #protocol
+API gateway count can be more than one in holiday season in order
+to control load traffic
+#APiTesting
+#ApIinfrastructure
+
 
 
