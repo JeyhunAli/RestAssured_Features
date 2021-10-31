@@ -1,6 +1,8 @@
 package com.restApi_Get;
 
 /**
+ * REST was defined by Roy Fielding, a computer scientist. He presented the REST principles in his PhD dissertation in 2000.
+ * 
  * these two static imports we have to add manually
  * under these imports we have a lot of libraries
  * 
@@ -18,6 +20,7 @@ package com.restApi_Get;
  * rest api
  * rest assured 
  * 
+ * constraints and rules you should follow if you want to create RESTful APIs
  * rest api build upon on rest architicure 6 guidliance 
  * 1.it has to follow client server Architect: HTTP protocol 
  * 2.Rest API has to be stateless ness
@@ -49,6 +52,15 @@ package com.restApi_Get;
  * its not coming from bdd cucumber 
  * 
  * 
+ * 
+ * applying below data provider with number of data and tests
+ * the main reson for using data provider is
+ * lets say we have multiple data which is each and every data must use in test cases to see the result from each pf them
+ * instead of writing multiple test cases for each and every test data we can use data provider and run all the data in one test method
+ * 
+ * another example of using data provider 
+ * lets say we have registration form page in ui testing and we have to fill all the form 
+ * then its awesome example to use data provider to pass all the data in one test case
  * 
  * git fetch
  * git pull origin master
@@ -166,7 +178,8 @@ public class Get_API_BDD {
 		return new Object[][] { 
 			{ "2017", 20 }, 
 			{ "2016", 21 }, 
-			{ "1966", 9 }
+			{ "1966", 9 },
+			{ "1988", 16}
             };
 
 	}
@@ -235,10 +248,18 @@ public class Get_API_BDD {
 		       .header("content-length", equalTo("15"))
 		.and() 
 		       .header("x-powered-by", equalTo("Express"));
-		
-		
 	}
 	
-	
+	@Test
+	public static void jsonvaluetest() {
+		
+		given().log().all()
+		.auth()
+		.basic("admin", "admin")
+		.when().log().all()
+		    .get("https://books-api.glitch.me/api/users")
+		.then().log().all();    
+		
+	}
 
 }

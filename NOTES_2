@@ -3,3 +3,105 @@ with the rest assured we creating rest assured methods with the help of java
 to hit the api and getting response validating response 
 to make sure actual response is matching with expected response rest assured is used to automate the 
 api process 
+
+
+
+ 
+
+
+#API #Gateway
+
+Api is require additional infrastructure to secure, scale, and accelerate. applications
+And nowadays most of the applications build with #microservices
+These #microservices are loosely coupled in order to make your apps more scalable and highly available
+using a  #microservice comes with many more API calls going between your clients and your  
+microservices
+So, how do you securely manage this API traffic for a distributed system?  
+Well, with an API Gateway! 
+the first main benefit of API gateway is client #performance.
+the next main benefit is #security.
+another benefit which is #http #https #protocol
+API gateway count can be more than one in holiday season in order
+to control load traffic
+#APiTesting
+#ApIinfrastructure
+
+
+	APIs can make applications or can break applications and have to require additional infrastructure to secure,  
+scale, and accelerate. And this is the case now more than ever as organizations are modernizing  
+their large legacy monolithic applications into smaller individual microservices.  
+These microservices are loosely coupled in order to make your apps more scalable,  
+highly available, and resource efficient just to name a few. However, the outcome of using a  
+microservice oriented architecture comes with many more API calls going between your clients and your  
+microservices. So, how do you securely manage this influx of API traffic for a distributed system?  
+Well, with an API Gateway! 
+
+
+
+ So, your API Gateway would reside right here  
+in the middle between your clients and your microservices. And there are numerous benefits  
+with implementing an API Gateway solution
+
+So, the first main benefit is client performance. 
+So, in our last example we had our clients making a bunch of API requests to  
+each individual microservice. So, in this instance with our API Gateway, which would  
+essentially be like a reverse proxy, or you could even consider it like an API traffic controller,  
+you would take those requests and then route them to the appropriate microservice. So, this has  
+numerous benefits, right, because now instead of having all those individual requests go into each  
+microservice now you can filter it through your api gateway and this reduces latency.  
+So now your product detail UI page will run much more efficient, much faster,  
+and it's a better client experience because you don't have as many round trips, right.  
+Because in our last example say you had a request come in, it went to the Product Info Service,  
+but you're Pricing microservices needs to speak with the Product one. So, you would have to go  
+back to the Client, back to Pricing and so on. So, this reduces those round trips here. And on top of  
+just being a better, you know client performance, it also helps the development team as well because  
+they don't have to manage and maintain all those individual API requests. Now they can  
+do this all through the api gateway. 
+
+So, the next main benefit is security.
+So, by having this API Gateway right here, we essentially have a security barrier  
+in front of our front-end clients, right. Our front-end API endpoints. Because otherwise  
+we had everything wide open, right. And you're not as susceptible to like a DoS, Denial of Service  
+attack, or any other malicious attack with this API Gateway. And you could add other services  
+within this API Gateway, like authentication, authorization to add another layer of security.
+
+And this leads me to my next benefit which is protocol translation.
+So, if you recall, we had to have the same internet friendly protocol going from our clients to the  
+microservice in order for it to function and operate. Here we could say we have https.  
+The "s" again is secure credential, but we can change the protocol here we can just go http  
+for each API request that's routed. And by removing the "s" and that secure credential  
+you don't have to authenticate this is SSL termination. Where the SSL stands for secure  
+socket layer. And this is a process where you decrypt and offload the encrypted SSL  
+data within the API Gateway instead of going to our backend microservices. So, by doing this,  
+this greatly helps performance of our e-Commerce storefront as you can see. Although I don't know  
+why we don't have any more schmediums. You don't even have to have, you know, internet friendly,  
+you can even have server-side protocols like AMQP.  So, you have a larger reach, right. You have more  
+usability with your e-commerce storefront because you could have other protocols.
+
+And the last quick benefit I want to mention is common
+Functionality offload.
+So, we're offloading these common functionalities for every microservice that we had to have in  
+order for it to operate, right. So, now we can take some of that business logic  
+and put it in this API Gateway. You can just have your microservices running a little bit  
+more efficiently and smoother because we're just focusing on their tasks that they really need to  
+focus on they don't need all that other business logic.
+
+ So, you could have stuff like rate limiting,  
+you could have 10 requests for every 60 seconds if you want to put a cap on that to help with  
+demand. You could also have stuff like API monitoring and logging if you want to keep  
+it on the API health and how everything's working operational wise. And there's just so much more  
+and that's just a few there's a lot more standard features typically with an API Gateway solution.  
+So, this is great and all, but what if we get an instance where  
+say you get a huge spike in traffic and Indie's Custom Threads is preparing for Black Friday.  
+Oh my god, we're going to get so much traffic what are we going to do? You got users here,  
+you got users here. Well, we could install and implement a BFF architecture. And no,  
+I'm not saying best friend forever, although I will be your best friend if you like this video.  
+I'm talking about back-end to front-end. And essentially what this is, is you're adding  
+additional API Gateways. So, for this one for instance this would be our dedicated  
+Web API Gateway. So here we could have one for our mobile devices, right, you could have another API  
+Gateway. And this would just be dedicated to your, you know, native iOS and Android devices. And it  
+would take all that API traffic coming for those devices and route them to the right microservices.  
+And this is, you know, you could have this for the third-party integration
+So, this is a great benefit if you're going to have a huge demand and  
+spike with traffic, or say you're just adding a lot more functionality and features to your  
+e-Commerce storefront. So, this would be a great architecture to consider to expand and scale up.  
